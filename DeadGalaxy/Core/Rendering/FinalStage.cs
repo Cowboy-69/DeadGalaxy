@@ -68,6 +68,8 @@ namespace DeadGalaxy.Core.Rendering
             // Ending shader rendering move
             Raylib.EndShaderMode();
 
+            Menu.Instance?.Render();
+
             return new Dictionary<string, Texture2D>();
         }
     }

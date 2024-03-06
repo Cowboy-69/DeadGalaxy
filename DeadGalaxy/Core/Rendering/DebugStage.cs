@@ -42,7 +42,7 @@ namespace DeadGalaxy.Core.Rendering
                 Raylib.DrawFPS(8, 8);
             }
 
-            if (Configuration.Get<bool>("debug:rendering"))
+            if (Configuration.Get<bool>("debug:rendering") && !Menu.Instance.IsMenuActive)
             {
                 DrawRenderingDebug(values);
             }

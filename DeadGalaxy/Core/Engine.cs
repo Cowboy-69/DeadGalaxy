@@ -49,6 +49,8 @@ namespace DeadGalaxy.Core
                 new DebugStage()
             ]);
 
+            Menu.Init();
+
             // Loading init scene
             Scene.Load("Init");
         }
@@ -71,6 +73,8 @@ namespace DeadGalaxy.Core
 
                 // Updating debug console logic
                 Console.Instance?.Update();
+
+                Menu.Instance?.Update();
 
                 // Rendering scene
                 Raylib.BeginDrawing();
